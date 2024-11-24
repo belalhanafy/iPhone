@@ -15,7 +15,7 @@ const HowItWorks = () => {
                     videoRef.current.currentTime = 0; // Reset video to start
                     videoRef.current.play(); // Play video
                 },
-                onEnterBack:() =>{
+                onEnterBack: () => {
                     videoRef.current.currentTime = 0; // Reset video to start
                     videoRef.current.play(); // Play video
 
@@ -51,7 +51,7 @@ const HowItWorks = () => {
     }, [])
     return (
         <section className="common-padding">
-            <div className="screen-max-width">
+            <div className="screen-max-width overflow-hidden">
                 <div id="chip" className="flex-center w-full my-20">
                     <img src={chipImg} alt="chip" width={180} height={180} />
                 </div>
@@ -77,7 +77,7 @@ const HowItWorks = () => {
                             />
                         </div>
                         <div className="hiw-video">
-                            <video id='hiwVideo' className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
+                            <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
                                 <source src={frameVideo} type="video/mp4" />
                             </video>
                         </div>
@@ -87,7 +87,7 @@ const HowItWorks = () => {
 
                 <div className="hiw-text-container">
                     <div className="flex flex-1 justify-center flex-col">
-                        <p className="hiw-text g_fadeIn mb-10 md:mb-0">
+                        <p className="hiw-text g_fadeIn">
                             A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
                             <span className="text-white">
                                 best graphic performance by far

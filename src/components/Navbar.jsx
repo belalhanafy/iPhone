@@ -35,7 +35,8 @@ const Navbar = () => {
                         </div>
                     ))}
                 </div>
-                <div className={`fixed z-50 ${isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"} transition-all duration-300 top-0 left-0 right-0 bottom-0 w-full bg-black pt-6 p-8`}>
+
+                <div className={`fixed z-50 ${isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"} transition-all duration-300 top-0 left-0 right-0 bottom-0 bg-black pt-6 p-8`}>
                     <div className='flex justify-between items-center mb-10'>
                         <img className='cursor-pointer' src={appleImg} alt="Apple" width={18} height={18} />
                         <div className='flex items-baseline gap-7'>
